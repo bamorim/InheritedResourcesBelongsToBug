@@ -1,0 +1,9 @@
+<ul>
+  <% @roots.each do |r| %>
+    <li>
+      <b><%= r.name %></b>
+      <%= link_to "Namespaceds" , root_namespace_namespaceds_path(r) %>
+      <%= link_to "Childs" , root_childs_path(r) %>
+    </li>
+  <% end %>
+</ul>
